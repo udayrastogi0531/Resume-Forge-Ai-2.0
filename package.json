@@ -1,0 +1,11 @@
+{
+  "name": "resumeforge-ai",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "lint:web": "npm --prefix apps/web run lint",
+    "dev:api": "cd apps/api && python3 -m uvicorn app.main:app --reload --port 8000",
+    "test:api": "cd apps/api && python3 -m pytest tests/test_api.py -v"
+  }
+}
